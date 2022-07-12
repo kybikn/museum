@@ -1,4 +1,4 @@
-//animation slider start
+// Welcome slider
 
 const btnPrev = document.querySelector(".slider-arrow-left");
 const btnNext = document.querySelector(".slider-arrow-right");
@@ -65,7 +65,7 @@ btnPrev.addEventListener("click", prevSlide);
 
 setInterval(nextSlide, 4000);
 
-// установка видео
+// Video
 const video = document.querySelector(".viewer");
 const playBtn = document.querySelector(".play");
 const button = document.querySelector(".video__button");
@@ -134,4 +134,29 @@ function updatePlayProgress() {
 function updatePlay() {
   // изменение текущего времени проигрывания в зависимости от положения точки на полоске input
   video.currentTime = (controlPlay.value / 100) * video.duration;
+}
+
+// ----------------------modal------------------------
+
+const modal = document.querySelectorAll(".modal-block");
+const cardsAll = document.querySelectorAll(".card");
+cardsAll.forEach((element) => element.addEventListener("click", toggleModal));
+
+function toggleModal(event) {
+  event.preventDefault();
+  if (
+    event.target.classList.contains("close") ||
+    event.target.classList.contains("close-x") ||
+    event.target.classList.contains("close-all")
+  ) {
+    let card = event.currentTarget.dataset.modal;
+    let modal = document.querySelector(card);
+    modal.classList.remove("active-modal");
+    body.classList.remove("active");
+  } else {
+    let card = event.currentTarget.dataset.modal;
+    let modal = document.querySelector(card);
+    modal.classList.add("active-modal");
+    body.classList.add("active");
+  }
 }

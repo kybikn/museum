@@ -1,77 +1,10 @@
-// Welcome slider
-
-const btnPrev = document.querySelector(".slider-arrow-left");
-const btnNext = document.querySelector(".slider-arrow-right");
-
-const slides = document.querySelectorAll(".item");
-const dots = document.querySelectorAll(".slider-square");
-
-const currentPage = document.querySelector(".page-number.first");
-const totalPages = document.querySelector(".page-number.second");
-totalPages.textContent = `0${slides.length}`;
-
-let index = 0;
-console.log(dots);
-
-function activeSlide(n) {
-  for (slide of slides) {
-    slide.classList.remove("active");
-  }
-  slides[n].classList.add("active");
-}
-
-function activeDot(n) {
-  for (dot of dots) {
-    dot.classList.remove("active");
-  }
-  dots[n].classList.add("active");
-}
-
-function currentSlide(n) {
-  activeSlide(n);
-  activeDot(n);
-  currentPage.innerText = "0" + (index + 1);
-}
-
-function nextSlide() {
-  if (index == slides.length - 1) {
-    index = 0;
-    currentSlide(index);
-  } else {
-    index++;
-    currentSlide(index);
-  }
-}
-
-function prevSlide() {
-  if (index == 0) {
-    index = slides.length - 1;
-    currentSlide(index);
-  } else {
-    index--;
-    currentSlide(index);
-  }
-}
-
-dots.forEach((item, indexDot) => {
-  item.addEventListener("click", () => {
-    index = indexDot;
-    currentSlide(index);
-  });
-});
-
-btnNext.addEventListener("click", nextSlide);
-btnPrev.addEventListener("click", prevSlide);
-
-setInterval(nextSlide, 4000);
-
-// Video
 const video = document.querySelector(".viewer");
 const playBtn = document.querySelector(".play");
 const button = document.querySelector(".video__button");
 const sound = document.querySelector(".volume-icon");
 const controlSound = document.querySelector(".volume");
 const controlPlay = document.querySelector(".progress");
+const fullscreen = document.querySelector(".square-icon");
 
 playBtn.addEventListener("click", togglePlay);
 button.addEventListener("click", togglePlay);
@@ -83,6 +16,7 @@ video.addEventListener("volumechange", updateAudioButton);
 video.addEventListener("timeupdate", updatePlayProgress);
 controlSound.addEventListener("change", updateVolume);
 controlPlay.addEventListener("change", updatePlay);
+fullscreen.addEventListener("click", openFullscreen);
 
 function togglePlay() {
   if (video.paused) {
@@ -136,27 +70,15 @@ function updatePlay() {
   video.currentTime = (controlPlay.value / 100) * video.duration;
 }
 
-// ----------------------modal------------------------
-
-const modal = document.querySelectorAll(".modal-block");
-const cardsAll = document.querySelectorAll(".card");
-cardsAll.forEach((element) => element.addEventListener("click", toggleModal));
-
-function toggleModal(event) {
-  event.preventDefault();
-  if (
-    event.target.classList.contains("close") ||
-    event.target.classList.contains("close-x") ||
-    event.target.classList.contains("close-all")
-  ) {
-    let card = event.currentTarget.dataset.modal;
-    let modal = document.querySelector(card);
-    modal.classList.remove("active-modal");
-    body.classList.remove("active");
-  } else {
-    let card = event.currentTarget.dataset.modal;
-    let modal = document.querySelector(card);
-    modal.classList.add("active-modal");
-    body.classList.add("active");
+// открытие видео на полный экран
+function openFullscreen() {
+  if (video.requestFullscreen) {
+    video.requestFullscreen();
+  } else if (video.mozRequestFullScreen) {
+    video.mozRequestFullScreen();
+  } else if (video.webkitRequestFullscreen) {
+    video.webkitRequestFullscreen();
+  } else if (video.msRequestFullscreen) {
+    video.msRequestFullscreen();
   }
 }

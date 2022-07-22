@@ -9,7 +9,6 @@ const totalPages = document.querySelector(".page-number.second");
 totalPages.textContent = `0${slides.length}`;
 
 let index = 0;
-console.log(dots);
 
 function activeSlide(n) {
   for (slide of slides) {
@@ -37,6 +36,7 @@ function nextSlide() {
     currentSlide(index);
   } else {
     index++;
+    console.log("before current");
     currentSlide(index);
   }
 }
@@ -61,4 +61,4 @@ dots.forEach((item, indexDot) => {
 btnNext.addEventListener("click", nextSlide);
 btnPrev.addEventListener("click", prevSlide);
 
-setInterval(nextSlide, 5000);
+window.addEventListener("load", () => setInterval(nextSlide, 5000));

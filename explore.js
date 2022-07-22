@@ -13,9 +13,7 @@ function initComparisons() {
     let clicked = 0;
     /*get the width and height of the img element*/
     const w = img.offsetWidth;
-    console.log("w:", w);
     const h = img.offsetHeight;
-    console.log("h:", h);
     /*set the width of the img element to 50%:*/
     img.style.width = w / 2 + "px";
     /*create slider:*/

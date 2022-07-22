@@ -17,7 +17,7 @@ a {
 }
 
 .section__title {
-  font-family: "Forum", cursive;
+  font-family: "Forum";
   font-style: normal;
   font-weight: normal;
   font-size: 80px;
@@ -86,7 +86,7 @@ a {
 
 .logo__text {
   color: #ffffff;
-  font-family: "Forum", cursive;
+  font-family: "Forum";
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
@@ -563,8 +563,10 @@ a {
 }
 
 .viewer {
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
+  height: 650px;
+  width: 1440px;
   border: 1px solid #bdae82;
   border-bottom: 0;
 }
@@ -733,6 +735,7 @@ a {
 
 .arrow {
   color: #999999;
+  cursor: pointer;
 }
 
 .arrow:hover {

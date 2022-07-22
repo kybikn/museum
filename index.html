@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>museum</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./normalize.css">
@@ -43,8 +43,6 @@
         <!-- WELCOME -->
         <section class="welcome">
             <div class="container welcome__container">
-
-
                 <div class="welcome__content">
                     <h1 class="section__title section__title-dark">Welcome<br>to the louvre</h1>
                     <p class="welcome__text">
@@ -191,7 +189,15 @@
                     </p>
                 </div>
                 <div class="video__block">
-                    <video class="viewer" poster="./assets/img/video.jpg" src="./assets/video/Louvre.mp4"></video>
+                    <iframe class="viewer" src="https://www.youtube.com/embed/zp1BXPX8jcU" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy">
+                    </iframe>
+
+                    <!-- <video class="viewer" poster="./assets/img/video.jpg"
+                        src="https://www.youtube.com/embed/zp1BXPX8jcU"></video> -->
+                    <!-- <video class="viewer" poster="./assets/img/video.jpg" src="./assets/video/Louvre.mp4"></video> -->
                     <button class="video__button"></button>
                     <div class="video__control_box">
                         <div class="play play-icon"></div>
@@ -236,13 +242,13 @@
                 </div> -->
 
                 <div class="video__slider">
-                    <div class="video__slider_item">
+                    <div class="video__slider_item active">
                         <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zp1BXPX8jcU"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen loading="lazy">
                         </iframe> -->
-                        <img src="./assets/img/video1.jpg" alt="">
+                        <img src="./assets/img/video1.jpg" alt="" active>
                     </div>
                     <div class="video__slider_item">
                         <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Vi5D6FKhRmo"
@@ -279,17 +285,17 @@
                 </div>
 
                 <div class="video__slider_box">
-                    <a onclick="minusSlide()">
+                    <a class="prev">
                         <span class="arrow">&#10094;&#10094;</span>
                     </a>
                     <div class="video__slider_circles">
-                        <span class="slider_circle" onclick="currentSlide(1)"></span>
-                        <span class="slider_circle" onclick="currentSlide(2)"></span>
-                        <span class="slider_circle" onclick="currentSlide(3)"></span>
-                        <span class="slider_circle" onclick="currentSlide(4)"></span>
-                        <span class="slider_circle" onclick="currentSlide(5)"></span>
+                        <span class="slider_circle active" data-circle="0"></span>
+                        <span class="slider_circle" data-circle="1"></span>
+                        <span class="slider_circle" data-circle="2"></span>
+                        <span class="slider_circle" data-circle="3"></span>
+                        <span class="slider_circle" data-circle="4"></span>
                     </div>
-                    <a class="next" onclick="plusSlide()">
+                    <a class="next">
                         <span class="arrow">&#10095;&#10095;</span>
                     </a>
                 </div>
@@ -504,52 +510,53 @@
                                 </div>
                             </div>
 
+                            <div class="modal__block-card">
+                                <div class="modal__block-card-front">
+                                    <div class="modal__box-card">
+                                        <div class="modal__box-visa">
+                                            <div>
+                                                <div>
+                                                    <p class="modal__text-card">Card number</p>
+                                                    <input class="modal__input-card modal__input-number" type="text"
+                                                        name="number">
+                                                </div>
+                                                <p class="modal__text-card">Expiration date</p>
+                                                <div class="modal__box-date">
+                                                    <input class="modal__input-card modal__input-date" type="month"
+                                                        name="month">
+                                                    <input class="modal__input-card modal__input-date" type="month"
+                                                        name="year">
+                                                </div>
+                                            </div>
 
-                            <div class="modal__block-card-front">
-                                <div class="modal__box-card">
-                                    <div class="modal__box-visa">
+                                            <div class="modal__logo-card">
+                                                <div class="modal__logo-visa">
+                                                    <img src="./assets/img/Visa.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <img src="./assets/img/Mastercard.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div>
-                                            <div>
-                                                <p class="modal__text-card">Card number</p>
-                                                <input class="modal__input-card modal__input-number" type="text"
-                                                    name="number">
-                                            </div>
-                                            <p class="modal__text-card">Expiration date</p>
-                                            <div class="modal__box-date">
-                                                <input class="modal__input-card modal__input-date" type="month"
-                                                    name="month">
-                                                <input class="modal__input-card modal__input-date" type="month"
-                                                    name="year">
-                                            </div>
-                                        </div>
-
-                                        <div class="modal__logo-card">
-                                            <div class="modal__logo-visa">
-                                                <img src="./assets/img/Visa.png" alt="">
-                                            </div>
-                                            <div>
-                                                <img src="./assets/img/Mastercard.png" alt="">
-                                            </div>
+                                            <p class="modal__text-card">Cardholder name</p>
+                                            <input class="modal__input-card modal__input-name" type="text" name="name">
                                         </div>
                                     </div>
-                                    <div>
-                                        <p class="modal__text-card">Cardholder name</p>
-                                        <input class="modal__input-card modal__input-name" type="text" name="name">
-                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="modal__block-card-back">
-                                <div class="modal__box-black"></div>
-                                <div class="modal__content-back">
-                                    <p class="modal__text-cvc">CVC/CVV</p>
-                                    <input class="modal__input-cvc" type="text" name="cvc">
-                                    <p class="modal__text-back">The last
-                                        3 or 4 digits
-                                        on back
-                                        of the card</p>
+                                <div class="modal__block-card-back">
+                                    <div class="modal__box-black"></div>
+                                    <div class="modal__content-back">
+                                        <p class="modal__text-cvc">CVC/CVV</p>
+                                        <input class="modal__input-cvc" type="text" name="cvc">
+                                        <p class="modal__text-back">The last
+                                            3 or 4 digits
+                                            on back
+                                            of the card</p>
+                                    </div>
+                                    <button class="modal__button-book">Book</button>
                                 </div>
-                                <button class="modal__button-book">Book</button>
                             </div>
                         </div>
                     </div>
@@ -638,7 +645,13 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="./main.js"></script> -->
+    <template id="video-template">
+        <div class="video-player">
+
+        </div>
+
+    </template>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./welcome-slider.js"></script>
     <script src="./explore.js"></script>
     <script src="./video.js"></script>

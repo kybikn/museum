@@ -21,6 +21,7 @@
 }
 
 .modal__form {
+  position: relative;
   display: flex;
   /* position: absolute; */
   height: 845px;
@@ -29,6 +30,7 @@
 }
 
 .modal__block {
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   margin: 75px auto;
@@ -44,8 +46,8 @@
   display: flex;
   align-items: center;
   position: absolute;
-  top: 230px;
-  right: 400px;
+  top: 30px;
+  right: 30px;
   cursor: pointer;
   color: #030303;
 }
@@ -392,7 +394,7 @@
   /* position: absolute; */
   /* left: 0;
   top: 0; */
-  z-index: 1000;
+  z-index: 100;
 }
 
 .modal__box-card {
@@ -450,20 +452,29 @@
 
 /* -------CardBack-------- */
 
+.modal__block-card {
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .modal__block-card-back {
-  background: #bcbcbc;
+  background: #939393;
   width: 360px;
   height: 211px;
   position: absolute;
-  right: 630px;
-  bottom: 380px;
+  right: 30px;
+  top: 40px;
   display: flex;
 }
 
 .modal__box-black {
   background: #161615;
   height: 45px;
-  width: 360px;
+  /* width: 360px; */
+  width: 100%;
+  position: absolute;
   margin-top: 25px;
 }
 
@@ -513,6 +524,7 @@
 .modal__button-book {
   height: 45px;
   width: 220px;
+  margin-left: 140px;
   margin-top: 230px;
   background: #710707;
   opacity: 0.9;

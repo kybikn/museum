@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>museum</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;400&display=swap"
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./modal.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-adaptive.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <link rel="icon" href="./assets/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
@@ -54,25 +54,24 @@
 
                 <div class="welcome__slider">
                     <div class="welcome__slider_container">
-                        <div class="welcome__slider-shadow">
-                            <img src="./assets/img/welcome-slider-shadow.png" alt="welcome-slider-shadow">
-                        </div>
+                        <img class="welcome__slider-shadow" src="./assets/img/welcome-slider-shadow.png"
+                            alt="welcome-slider-shadow">
                         <div class="welcome__container_item">
-                            <div class="welcome_item active">
-                                <img src="./assets/img/Welcome1.jpg" alt="welcome1">
-                            </div>
-                            <div class="welcome_item">
-                                <img src="./assets/img/Welcome2.jpg" alt="welcome2">
-                            </div>
-                            <div class="welcome_item">
-                                <img src="./assets/img/Welcome3.jpg" alt="welcome3">
-                            </div>
-                            <div class="welcome_item">
-                                <img src="./assets/img/Welcome4.jpg" alt="welcome4">
-                            </div>
-                            <div class="welcome_item">
-                                <img src="./assets/img/Welcome5.jpg" alt="welcome5">
-                            </div>
+                            <!-- <div > -->
+                            <img class="welcome_item active" src="./assets/img/Welcome1.jpg" alt="welcome1">
+                            <!-- </div> -->
+                            <!-- <div > -->
+                            <img class="welcome_item" src="./assets/img/Welcome2.jpg" alt="welcome2">
+                            <!-- </div> -->
+                            <!-- <div > -->
+                            <img class="welcome_item" src="./assets/img/Welcome3.jpg" alt="welcome3">
+                            <!-- </div> -->
+                            <!-- <div > -->
+                            <img class="welcome_item" src="./assets/img/Welcome4.jpg" alt="welcome4">
+                            <!-- </div> -->
+                            <!-- <div > -->
+                            <img class="welcome_item" src="./assets/img/Welcome5.jpg" alt="welcome5">
+                            <!-- </div> -->
                         </div>
                     </div>
                     <div class="welcome__slider_pagination">
@@ -190,7 +189,6 @@
                 </div>
                 <div class="video__block">
                     <iframe class="viewer" src="https://www.youtube.com/embed/zp1BXPX8jcU" title="YouTube video player"
-                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen loading="lazy">
                     </iframe>
@@ -248,7 +246,7 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen loading="lazy">
                         </iframe> -->
-                        <img src="./assets/img/video1.jpg" alt="" active>
+                        <img src="./assets/img/video1.jpg" alt="video1">
                     </div>
                     <div class="video__slider_item">
                         <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Vi5D6FKhRmo"
@@ -506,7 +504,7 @@
                             <div class="modal__block-total">
                                 <div class="modal__box-total">
                                     <p class="modal__text-total">Total:</p>
-                                    <p class="modal__text-total">60 €</p>
+                                    <p class="modal__text-total-number">60 €</p>
                                 </div>
                             </div>
 
@@ -652,12 +650,12 @@
 
     </template>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="./welcome-slider.js"></script>
-    <script src="./explore.js"></script>
-    <script src="./video.js"></script>
-    <script src="./video-slider.js"></script>
-    <script src="./gallery.js"></script>
-    <script src="./modal.js"></script>
+    <script src="./js/welcome-slider.js"></script>
+    <script src="./js/explore.js"></script>
+    <script src="./js/video.js"></script>
+    <script src="./js/video-slider.js"></script>
+    <script src="./js/gallery.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

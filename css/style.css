@@ -3,13 +3,17 @@ body {
   background-color: black;
 }
 
+/* * {
+  border: 1px solid #fff;
+} */
+
 html {
   scroll-behavior: smooth;
 }
 
 .container {
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
 }
 
 a {
@@ -19,12 +23,12 @@ a {
 .section__title {
   font-family: "Forum";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 80px;
   line-height: 90px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  font-weight: 100;
+  /* font-weight: 100; */
   margin-bottom: 80px;
   /* display: inline-block; */
 }
@@ -54,10 +58,6 @@ a {
 }
 
 /* --------------HEADER--------------- */
-/* .header {
-  background-color: #030303;
-} */
-
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -70,12 +70,13 @@ a {
 .logo {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 199px;
   height: 33px;
 }
 
 .logo__image {
-  background-image: url("./assets/svg/logo.svg");
+  background-image: url("../assets/svg/logo.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 49px;
@@ -88,7 +89,7 @@ a {
   color: #ffffff;
   font-family: "Forum";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 28px;
   line-height: 31px;
   letter-spacing: 5px;
@@ -113,20 +114,12 @@ a {
   list-style: none;
 }
 
-.header__li {
-  font-family: "Roboto", sans-serif;
-  font-size: 22px;
-  line-height: 22px;
-  letter-spacing: 2px;
-}
-
 .header__link {
   display: inline-block;
-  /* list-style: none; */
   padding-left: 30px;
   width: 63px;
   height: 26px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 100;
   font-size: 22px;
@@ -145,14 +138,13 @@ a {
 /* --------------WELCOME--------------- */
 .welcome {
   background-color: #030303;
-  height: 810px;
+  /* height: 810px; */
 }
 
 .welcome__container {
   position: relative;
-  /* height: 810px; */
-  height: 100%;
-  /* height: 842px; */
+  height: 810px;
+  /* height: 100%; */
   /* padding: 75px 0; */
 }
 
@@ -161,12 +153,12 @@ a {
   padding-top: 150px;
   position: absolute;
   /* max-width: 593px; */
-  /* // position: relative; */
-  /* // width: calc(30% - 32px); */
+  /*  position: relative; */
+  /*  width: calc(30% - 32px); */
 }
 
 .welcome__text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
   font-size: 28px;
@@ -178,19 +170,19 @@ a {
 }
 
 .welcome__button {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
   display: inline-block;
   margin-top: 75px;
-  padding: 0 64px;
+  padding: 30px 64px;
   color: #ffffff;
   background-color: #710707;
   border-radius: 10px;
   font-size: 22px;
-  line-height: 75px;
+  line-height: 26px;
   transition: 0.7s;
   letter-spacing: 2px;
-  font-family: "Roboto", sans-serif;
 }
 
 /* .welcome-image {
@@ -218,7 +210,7 @@ a {
 }
 
 .welcome__slider_container {
-  position: relative;
+  /* position: relative; */
   height: 750px;
   width: 100%;
 }
@@ -270,7 +262,9 @@ a {
   font-size: 22px;
   line-height: 40px;
   gap: 0 10px;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
   /* user-select: none; */
 }
 
@@ -305,7 +299,7 @@ a {
 .slider_arrow-left {
   height: 8px;
   width: 30px;
-  background-image: url("./assets/svg/slider-left-arrow.svg");
+  background-image: url("../assets/svg/slider-left-arrow.svg");
   transition: 0.7s;
   cursor: pointer;
 }
@@ -313,7 +307,7 @@ a {
 .slider_arrow-right {
   height: 8px;
   width: 30px;
-  background-image: url("./assets/svg/slider-left-arrow.svg");
+  background-image: url("../assets/svg/slider-left-arrow.svg");
   transform: scale(-1, 1);
   transition: 0.7s;
   cursor: pointer;
@@ -381,6 +375,7 @@ a {
 .visiting__title {
   font-family: "Forum", cursive;
   font-style: normal;
+  font-weight: 100;
   font-weight: normal;
   font-size: 32px;
   line-height: 35px;
@@ -417,7 +412,7 @@ a {
   color: #000000;
   padding-top: 10px;
   padding-bottom: 10px;
-  /* //   margin-bottom: 10px; */
+  /*  margin-bottom: 10px; */
 }
 
 .visiting__text2 {
@@ -468,6 +463,7 @@ a {
 .explore__text {
   width: 660px;
   height: 77px;
+
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -489,6 +485,8 @@ a {
 .explore__box-image {
   position: relative;
   height: 700px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .explore__image {
@@ -511,7 +509,7 @@ a {
 }
 
 .explore__image-slider {
-  background-image: url(./assets/svg/explore-slider.svg);
+  background-image: url("../assets/svg/explore-slider.svg");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -544,6 +542,7 @@ a {
 .video__text {
   width: 50%;
   height: 90px;
+  font-family: "Roboto-Light";
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -572,7 +571,7 @@ a {
 }
 
 .video__button {
-  background-image: url("./assets/svg/play.svg");
+  background-image: url("../assets/svg/play.svg");
   position: absolute;
   background-color: transparent;
   width: 220px;
@@ -600,7 +599,7 @@ a {
 }
 
 .play {
-  background-image: url("./assets/svg/play2.svg");
+  background-image: url("../assets/svg/play2.svg");
   width: 23px;
   height: 31px;
   margin: 30px;
@@ -621,7 +620,7 @@ a {
 }
 
 .volume-icon {
-  background-image: url("./assets/svg/volume.svg");
+  background-image: url("../assets/svg/volume.svg");
   width: 33px;
   height: 31px;
   margin: 30px;
@@ -629,7 +628,7 @@ a {
 }
 
 .square-icon {
-  background-image: url("./assets/svg/square-icon.svg");
+  background-image: url("../assets/svg/square-icon.svg");
   width: 35px;
   height: 35px;
   margin: 30px;
@@ -637,11 +636,11 @@ a {
 }
 
 .pause {
-  background-image: url("./assets/svg/pause.svg");
+  background-image: url("../assets/svg/pause.svg");
 }
 
 .mute {
-  background-image: url("./assets/svg/mute.svg");
+  background-image: url("../assets/svg/mute.svg");
 }
 
 .progress {
@@ -844,7 +843,7 @@ a {
 } */
 
 /* .youtube-icon {
-  background-image: url("./assets/svg/youtube-icon.svg");
+  background-image: url("../assets/svg/youtube-icon.svg");
   background-size: contain;
   background-color: transparent;
   background-position: center;
@@ -973,6 +972,7 @@ a {
 
 .tickets__type_text {
   cursor: pointer;
+
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -986,6 +986,7 @@ a {
 
 .tickets__text {
   cursor: pointer;
+
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -1058,6 +1059,7 @@ a {
   border: none;
   font-size: 35px;
   color: #000000;
+
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1077,6 +1079,7 @@ a {
   border: none;
   font-size: 32px;
   color: #000000;
+
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1273,23 +1276,23 @@ a {
 }
 
 .icon_yt {
-  background-image: url("./assets/svg/youtube.svg");
+  background-image: url("../assets/svg/youtube.svg");
 }
 
 .icon_inst {
-  background-image: url("./assets/svg/instagram.svg");
+  background-image: url("../assets/svg/instagram.svg");
 }
 
 .icon_fb {
-  background-image: url("./assets/svg/facebook.svg");
+  background-image: url("../assets/svg/facebook.svg");
 }
 
 .icon_tw {
-  background-image: url("./assets/svg/twitter.svg");
+  background-image: url("../assets/svg/twitter.svg");
 }
 
 .icon_pint {
-  background-image: url("./assets/svg/pinterest.svg");
+  background-image: url("../assets/svg/pinterest.svg");
 }
 
 .footer__underline {

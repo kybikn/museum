@@ -61,7 +61,7 @@
 }
 
 .modal__logo_image {
-  background-image: url("./assets/svg/logo-modal.svg");
+  background-image: url("../assets/svg/logo-modal.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 85px;
@@ -70,6 +70,7 @@
 
 .modal__title {
   color: #ffffff;
+
   font-family: "Forum", cursive;
   font-style: normal;
   font-weight: normal;
@@ -117,6 +118,7 @@
   color: #030303;
   background-repeat: no-repeat;
   background-position: 15px;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -138,32 +140,32 @@
 }
 
 .modal__icon-date {
-  background-image: url(./assets/svg/input-date.svg);
+  background-image: url("../assets/svg/input-date.svg");
   background-size: 15px;
 }
 
 .modal__icon-time {
-  background-image: url(./assets/svg/input-time.svg);
+  background-image: url("../assets/svg/input-time.svg");
   background-size: 15px;
 }
 
 .modal__icon-name {
-  background-image: url(./assets/svg/input-name.svg);
+  background-image: url("../assets/svg/input-name.svg");
   background-size: 15px;
 }
 
 .modal__icon-email {
-  background-image: url(./assets/svg/input-email.svg);
+  background-image: url("../assets/svg/input-email.svg");
   background-size: 17px;
 }
 
 .modal__icon-phone {
-  background-image: url(./assets/svg/input-phone.svg);
+  background-image: url("../assets/svg/input-phone.svg");
   background-size: 11px;
 }
 
 .modal__icon-text {
-  background-image: url(./assets/svg/input-type.svg);
+  background-image: url("../assets/svg/input-type.svg");
   background-size: 14px;
 }
 
@@ -173,7 +175,7 @@
   box-sizing: border-box;
   border: #000000 1px solid;
   color: #030303;
-  /* font-family: "Roboto-Regular"; */
+  font-family: "Roboto";
   /* font-size: 18px; */
   /* display: flex;
     justify-content: center;
@@ -185,7 +187,7 @@
   line-height: 20px;
   font-size: 18px;
   color: #9d8665;
-  font-family: "Forum-Regular";
+  font-family: "Forum";
   margin-top: 10px;
   margin-bottom: 5px;
   padding-left: 15px;
@@ -287,6 +289,7 @@
 .modal__text-overview {
   margin-bottom: 5px;
   margin-left: 15px;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
@@ -296,7 +299,7 @@
 }
 
 .modal__icon-overview-date {
-  background-image: url(./assets/svg/date.svg);
+  background-image: url("../assets/svg/date.svg");
   background-repeat: no-repeat;
   background-size: contain;
   height: 15px;
@@ -304,7 +307,7 @@
 }
 
 .modal__icon-overview-time {
-  background-image: url(./assets/svg/time.svg);
+  background-image: url("../assets/svg/time.svg");
   background-repeat: no-repeat;
   background-size: contain;
   height: 15px;
@@ -312,7 +315,7 @@
 }
 
 .modal__icon-overview-type {
-  background-image: url(./assets/svg/type.svg);
+  background-image: url("../assets/svg/type.svg");
   background-repeat: no-repeat;
   background-size: contain;
   height: 15px;
@@ -337,7 +340,7 @@
 }
 
 .modal__icon-price {
-  background-image: url(./assets/svg/modal-price.svg);
+  background-image: url("../assets/svg/modal-price.svg");
   background-repeat: no-repeat;
   background-size: contain;
   height: 20px;
@@ -348,6 +351,7 @@
 
 .modal__text-price {
   margin-bottom: 5px;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -381,6 +385,15 @@
   margin-bottom: 0px;
 }
 
+.modal__text-total-number {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #030303;
+  margin-bottom: 0px;
+}
 /* -------CardFront-------- */
 .modal__block-card-front {
   margin: 10px 30px 0 30px;
@@ -530,6 +543,7 @@
   opacity: 0.9;
   border: none;
   color: #ffffff;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;

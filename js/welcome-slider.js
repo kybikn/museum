@@ -36,7 +36,6 @@ function nextSlide() {
     currentSlide(index);
   } else {
     index++;
-    console.log("before current");
     currentSlide(index);
   }
 }

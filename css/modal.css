@@ -10,7 +10,7 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 100;
-  transition: 0.3s;
+  transition: 0.7s;
   opacity: 0;
   visibility: hidden;
 }
@@ -33,25 +33,38 @@
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
-  margin: 75px auto;
+  margin: 88px auto;
   height: 663px;
   width: 970px;
   /* position: relative; */
 }
 
 .close {
-  background-color: transparent;
-  transition: 0.7s;
-  border: none;
   display: flex;
   align-items: center;
   position: absolute;
-  top: 30px;
-  right: 30px;
+  box-sizing: border-box;
+  height: 35px;
+  width: 35px;
+  top: 0;
+  right: 0;
+  margin-top: 23px;
+  margin-right: 25px;
   cursor: pointer;
-  color: #030303;
 }
 
+.close-line {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #000000;
+}
+.close-line-left {
+  transform: rotate(45deg);
+}
+.close-line-right {
+  transform: rotate(-45deg);
+}
 /* --------Left-------- */
 .modal__container-left {
   height: 100%;
@@ -91,7 +104,7 @@
   font-size: 18px;
   line-height: 21px;
   color: #710707;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .modal__subtitle_underline {
@@ -113,30 +126,22 @@
 }
 
 .modal__input {
-  margin-bottom: 20px;
-  height: 45px;
+  margin-bottom: 21px;
+  height: 41px;
   color: #030303;
   background-repeat: no-repeat;
   background-position: 15px;
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #030303;
-  padding-left: 50px;
-  /* padding-left: 30px; */
-  /* background-position: left; */
-  /* padding: 11px 15px; */
-  /* margin: 20px 0; */
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
+  padding-left: 40px;
 }
 
 .modal__input-small {
-  width: 47.5%;
+  width: 36%;
 }
 
 .modal__icon-date {
@@ -188,8 +193,8 @@
   font-size: 18px;
   color: #9d8665;
   font-family: "Forum";
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   padding-left: 15px;
   font-style: normal;
   font-weight: 400;
@@ -233,7 +238,9 @@
   color: #ffffff;
   background: #030303;
   height: 25px;
-  width: 100%;
+  /* width: 100%; */
+  width: 35px;
+  box-sizing: border-box;
 }
 
 .number {
@@ -242,6 +249,8 @@
   margin: 0;
   text-align: center;
   border: 1px solid #030303;
+  height: 25px;
+  width: 35px;
 }
 
 /* -------Right--------  */
@@ -268,6 +277,7 @@
   font-size: 32px;
   line-height: 38px;
   color: #272727;
+  margin-bottom: 3px;
 }
 
 .modal__subtitle-overview {
@@ -331,7 +341,7 @@
 .modal__block-price {
   display: flex;
   justify-content: space-between;
-  margin: 25px 30px 0 30px;
+  margin: 20px 30px -7px 30px;
 }
 
 .modal__box-price {
@@ -364,6 +374,9 @@
   height: 2px;
   background-color: #740c11;
   margin: 10px 20px;
+  /* padding-left: 15px; */
+  /* margin-left: 10px; */
+  width: 90%;
 }
 
 .modal__block-total {
@@ -436,7 +449,7 @@
 .modal__input-card {
   display: flex;
   margin-bottom: 10px;
-  height: 35px;
+  height: 31px;
 }
 
 .modal__logo-card {
@@ -452,15 +465,15 @@
 }
 
 .modal__input-number {
-  width: 215px;
+  width: 213px;
 }
 
 .modal__input-date {
-  width: 100px;
+  width: 98px;
 }
 
 .modal__input-name {
-  width: 320px;
+  width: 317px;
 }
 
 /* -------CardBack-------- */
@@ -503,8 +516,8 @@
   /* padding-top: 120px; */
   /* padding-right: 190px; */
   position: absolute;
-  margin-left: 270px;
-  margin-top: 80px;
+  margin-left: 265px;
+  margin-top: 85px;
 }
 
 .modal__text-cvc {
@@ -517,8 +530,8 @@
 }
 
 .modal__input-cvc {
-  height: 35px;
-  width: 75px;
+  height: 32px;
+  width: 70px;
   margin-top: 5px;
   margin-bottom: 6px;
 }
@@ -538,12 +551,11 @@
   height: 45px;
   width: 220px;
   margin-left: 140px;
-  margin-top: 230px;
+  margin-top: 237px;
   background: #710707;
   opacity: 0.9;
   border: none;
   color: #ffffff;
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;

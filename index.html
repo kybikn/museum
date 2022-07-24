@@ -49,7 +49,7 @@
                         From the castle to the museum
                     </p>
                     <a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736"
-                        class="welcome__button" target="_blank">Discover the louvre</a>
+                        class="welcome__button" target="_blank">Discover the Louvre</a>
                 </div>
 
                 <div class="welcome__slider">
@@ -57,21 +57,11 @@
                         <img class="welcome__slider-shadow" src="./assets/img/welcome-slider-shadow.png"
                             alt="welcome-slider-shadow">
                         <div class="welcome__container_item">
-                            <!-- <div > -->
                             <img class="welcome_item active" src="./assets/img/Welcome1.jpg" alt="welcome1">
-                            <!-- </div> -->
-                            <!-- <div > -->
                             <img class="welcome_item" src="./assets/img/Welcome2.jpg" alt="welcome2">
-                            <!-- </div> -->
-                            <!-- <div > -->
                             <img class="welcome_item" src="./assets/img/Welcome3.jpg" alt="welcome3">
-                            <!-- </div> -->
-                            <!-- <div > -->
                             <img class="welcome_item" src="./assets/img/Welcome4.jpg" alt="welcome4">
-                            <!-- </div> -->
-                            <!-- <div > -->
                             <img class="welcome_item" src="./assets/img/Welcome5.jpg" alt="welcome5">
-                            <!-- </div> -->
                         </div>
                     </div>
                     <div class="welcome__slider_pagination">
@@ -151,7 +141,8 @@
                     <div>
                         <h2 class="section__title section__title-dark explore__title_underline">Picture explore</h2>
                         <p class="explore__text">
-                            Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden
+                            Las Meninas is a 1656 painting by Diego Velázquez, the leading &nbsp; artist of the Spanish
+                            Golden
                             Age.
                         </p>
                         <p class="explore__text">It was cleaned in 1984 to remove a <span class="explore__span">"yellow
@@ -240,7 +231,7 @@
                 </div> -->
 
                 <div class="video__slider">
-                    <div class="video__slider_item active">
+                    <div class="video__slider_items">
                         <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zp1BXPX8jcU"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -344,24 +335,33 @@
                     <img src="./assets/img/tickets1.jpg" class="tickets__image" alt="">
                     <form>
                         <div class="tickets__type">
-                            <h4 class="tickets__title">Ticket Type</h4>
+                            <h4 class="tickets__title-type">Ticket Type</h4>
+
+                            <!-- 
+                            <label class="label-container">Permanent exhibition
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label> -->
 
                             <label>
-                                <input type="radio" class="tickets__input" name="radio" value="radio1" checked>
+                                <input type="radio" class="tickets__input" name="radio" checked><span
+                                    class="checkmark"></span>
                                 <span class="tickets__type_text"> Permanent exhibition</span>
                             </label><br>
-                            <label><input type="radio" class="tickets__input" name="radio" value="radio2">
+                            <label><input type="radio" class="tickets__input" name="radio"><span
+                                    class="checkmark"></span>
                                 <span class="tickets__type_text"> Temporary
                                     exhibition</span>
                             </label><br>
-                            <label><input type="radio" class="tickets__input" name="radio" value="radio3">
+                            <label><input type="radio" class="tickets__input" name="radio"><span
+                                    class="checkmark"></span>
                                 <span class="tickets__type_text"> Combined Admission</span>
                             </label>
                         </div>
                     </form>
                     <form>
                         <div class="tickets__amount">
-                            <h4 class="tickets__title">Amount</h4>
+                            <h4 class="tickets__title-amount">Amount</h4>
                             <p class="tickets__text">Basic 18+</p>
                             <div class="tickets__button_number">
                                 <button class="button_minus" type="button"
@@ -394,10 +394,14 @@
             <!-- MODAL -->
             <div class="modal__container" id="openModal">
                 <form class="modal__form">
-                    <a class="close" href="#tickets"><img src="./assets/svg/modal-close.svg" alt=""></a>
+                    <a href="#tickets">
+                        <div class="close">
+                            <div class="close-line close-line-left"></div>
+                            <div class="close-line close-line-right"></div>
+                        </div>
+                    </a>
+
                     <div class="modal__block">
-
-
                         <div class="modal__container-left">
                             <div>
                                 <div class="modal__logo_image"></div>
@@ -548,9 +552,9 @@
                                     <div class="modal__content-back">
                                         <p class="modal__text-cvc">CVC/CVV</p>
                                         <input class="modal__input-cvc" type="text" name="cvc">
-                                        <p class="modal__text-back">The last
+                                        <p class="modal__text-back">The last<br>
                                             3 or 4 digits
-                                            on back
+                                            on back<br>
                                             of the card</p>
                                     </div>
                                     <button class="modal__button-book">Book</button>
@@ -600,12 +604,12 @@
                     </a>
                 </div>
                 <nav class="footer__nav">
-                    <ul>
+                    <ul class="footer__ul">
                         <li class="footer__li"><a href="#visiting" class="footer__link">Visiting</a></li>
                         <li class="footer__li"><a href="#explore" class="footer__link">Explore</a></li>
                         <li class="footer__li"><a href="#video" class="footer__link">Video</a></li>
                     </ul>
-                    <ul>
+                    <ul class="footer__ul">
                         <li class="footer__li"><a href="#gallery" class="footer__link">Gallery</a></li>
                         <li class="footer__li"><a href="#tickets" class="footer__link">Tickets</a></li>
                         <li class="footer__li"><a href="#contacts" class="footer__link">Contacts</a></li>

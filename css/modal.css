@@ -562,3 +562,10 @@
   font-size: 22px;
   line-height: 26px;
 }
+
+@media (max-width: 1024px) {
+  .modal__form {
+    height: 768px;
+    width: 1024px;
+  }
+}

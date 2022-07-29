@@ -9,7 +9,7 @@ function initSlider() {
     mouseDrag: true,
     swipeAngle: false,
     speed: 400,
-    autoplay: true,
+    // autoplay: true,
     autoplayButton: false,
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
@@ -19,12 +19,17 @@ function initSlider() {
     // controlsContainer: ".video__slider_box",
 
     responsive: {
-      640: {
+      1940: {
+        items: 3,
+      },
+      11020: {
+        items: 3,
+      },
+      768: {
         items: 2,
       },
-
-      768: {
-        items: 3,
+      640: {
+        items: 2,
       },
     },
   });

@@ -9,7 +9,7 @@ function initSlider() {
     mouseDrag: true,
     swipeAngle: false,
     speed: 400,
-    autoplay: true,
+    // autoplay: true,
     autoplayButton: false,
     autoplayTimeout: 2000,
     autoplayHoverPause: true,

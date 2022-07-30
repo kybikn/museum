@@ -19,10 +19,10 @@ function initSlider() {
     // controlsContainer: ".video__slider_box",
 
     responsive: {
-      1940: {
+      1920: {
         items: 3,
       },
-      11020: {
+      1024: {
         items: 3,
       },
       768: {

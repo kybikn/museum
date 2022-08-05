@@ -575,7 +575,7 @@ a {
   height: 650px;
   width: 1440px;
   /* border: 1px solid #bdae82; */
-  border-bottom: 0;
+  border: 0;
 }
 
 .video__button {
@@ -1108,8 +1108,8 @@ input[type="number"] {
   line-height: 33px;
   color: #000000;
   letter-spacing: 1.65px;
-  padding-bottom: 60px;
-  padding-top: 40px;
+  margin-bottom: 60px;
+  margin-top: 40px;
   /* padding-left: 150px; */
   /* margin-left: 100px; */
 }
@@ -1281,7 +1281,7 @@ input[type="number"] {
   height: 48px;
   width: 340px;
   /* padding-top: 78px; */
-  padding-top: 87px;
+  margin-top: 87px;
 }
 
 .icon {

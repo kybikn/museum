@@ -370,7 +370,7 @@ a {
 .visiting__image {
   width: 440px;
   height: 285px;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .visiting__title {
@@ -1226,6 +1226,8 @@ input[type="number"] {
 .footer__block {
   padding-top: 13px;
   display: flex;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
 }
 
 .footer__logo {
@@ -1266,6 +1268,7 @@ input[type="number"] {
   line-height: 26px;
   letter-spacing: 2px;
 }
+
 .footer__link:hover {
   color: #9d8665;
 }

@@ -316,6 +316,11 @@
   height: 170px;
 }
 
+.galery_shadow {
+  /* width: 768px; */
+  width: 100%;
+  height: 239px;
+}
 
 /* --------------GALLERY--------------- */
 .gallery__container {
@@ -448,13 +453,14 @@
  margin-top: 95px;
 }
 
+.footer__container_underline {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
 
 /* ------------------ */
 
 /* 
------------------
-
-
 
 .tickets-form {
   padding-left: 8%;

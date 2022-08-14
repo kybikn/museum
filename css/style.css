@@ -81,8 +81,11 @@ a {
   background-repeat: no-repeat;
   width: 49px;
   height: 26px;
-  transition: 0.7s;
+  transition: 1s;
   fill: #ffffff;
+  /* background-color: #fff;
+  -webkit-mask-image: url(../assets/svg/logo.svg);
+  -webkit-mask-size: cover; */
 }
 
 .logo__text {
@@ -93,7 +96,7 @@ a {
   line-height: 31px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  transition: 0.7s;
+  transition: 1s;
   color: #ffffff;
 }
 
@@ -125,12 +128,21 @@ a {
   line-height: 26px;
   letter-spacing: 2px;
   text-decoration: none;
-  transition: 0.7s;
+  transition: 1s;
   color: #ffffff;
 }
 
-.logo__image:hover,
-.logo__text:hover,
+/* .burger-image,
+.burger-image-small,
+.underline,
+.footer__ul-burger { */
+.vector,
+.burger__block {
+  display: none;
+}
+
+.logo:hover .logo__image,
+.logo:hover .logo__text,
 .header__link:hover {
   color: #9d8665;
 }
@@ -1269,6 +1281,8 @@ input[type="number"] {
   letter-spacing: 2px;
 }
 
+.footer__logo:hover .logo__image,
+.footer__logo:hover .logo__text,
 .footer__link:hover {
   color: #9d8665;
 }

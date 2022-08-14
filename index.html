@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style1024.css">
+    <!-- <link rel="stylesheet" href="./css/style900.css"> -->
     <link rel="stylesheet" href="./css/style768.css">
     <link rel="stylesheet" href="./css/style420.css">
     <link rel="stylesheet" href="./css/modal.css">
@@ -30,14 +31,55 @@
             </a>
             <nav class="header__nav">
                 <ul class="header__ul">
-                    <li><a href="#visiting" class="header__link">Visiting</a></li>
-                    <li><a href="#explore" class="header__link">Explore</a></li>
-                    <li><a href="#video" class="header__link">Video</a></li>
-                    <li><a href="#gallery" class="header__link">Gallery</a></li>
-                    <li><a href="#tickets" class="header__link">Tickets</a></li>
-                    <li><a href="#contacts" class="header__link">Contacts</a></li>
+                    <li><a href="#visiting" class="header__link">Visiting</a><span class="vector">></span></li>
+                    <li><a href="#explore" class="header__link">Explore</a><span class="vector">></span></li>
+                    <li><a href="#video" class="header__link">Video</a><span class="vector">></span></li>
+                    <li><a href="#gallery" class="header__link">Gallery</a><span class="vector">></span></li>
+                    <li><a href="#tickets" class="header__link">Tickets</a><span class="vector">></span></li>
+                    <li><a href="#contacts" class="header__link">Contacts</a><span class="vector">></span></li>
                 </ul>
+
+                <div class="burger__block">
+                    <div class="burger_image-box">
+                        <img class="burger_image" src="./assets/img/adaptive/burger1.jpg" alt="">
+                        <img class="burger_image image2" src="./assets/img/adaptive/burger2.jpg" alt="">
+                        <img class="burger_image" src="./assets/img/adaptive/burger3.jpg" alt="">
+                    </div>
+
+                    <div class="underline"></div>
+
+                    <ul class="footer__ul-burger">
+                        <li>
+                            <a href="https://www.youtube.com/user/louvre" target="_blank">
+                                <div class="icon icon_yt footer__link_icon"></div>
+                            </a>
+                        </li>
+                        <li><a href="https://www.instagram.com/museelouvre/" target="_blank">
+                                <div class="icon icon_inst footer__link_icon"></div>
+                            </a></li>
+                        <li><a href="https://www.facebook.com/museedulouvre" target="_blank">
+                                <div class="icon icon_fb footer__link_icon"></div>
+                            </a></li>
+                        <li><a href="http://twitter.com/museelouvre" target="_blank">
+                                <div class="icon icon_tw footer__link_icon"></div>
+                            </a></li>
+                        <li><a href="https://www.pinterest.fr/museedulouvre/" target="_blank">
+                                <div class="icon icon_pint footer__link_icon"></div>
+                            </a></li>
+                    </ul>
+                </div>
             </nav>
+            <div class="hamburger" id="hamburger">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </div>
+
+            <!-- <div class="burger-menu">
+                <label class="menu-btn">
+                    <span class="menu-icon"></span>
+                </label>
+            </div> -->
         </div>
     </header>
 
@@ -172,6 +214,13 @@
                     <div class="explore__image explore__image-overlay">
                         <img src="./assets/img/explore2.jpg" alt="The Design Thinking superpowers 2">
                     </div>
+
+                    <!-- <div class="explore__image-min">
+                        <img src="./assets/img/adaptive/explore-min1.jpg" alt="The Design Thinking superpowers">
+                    </div>
+                    <div class="explore__image-min explore__image-overlay-min">
+                        <img src="./assets/img/adaptive/explore-min2.jpg" alt="The Design Thinking superpowers 2">
+                    </div> -->
                 </div>
 
 
@@ -659,6 +708,7 @@
 
     </template>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./js/hamburger.js"></script>
     <script src="./js/welcome-slider.js"></script>
     <script src="./js/explore.js"></script>
     <script src="./js/video.js"></script>

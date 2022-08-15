@@ -132,10 +132,6 @@ a {
   color: #ffffff;
 }
 
-/* .burger-image,
-.burger-image-small,
-.underline,
-.footer__ul-burger { */
 .vector,
 .burger__block {
   display: none;
@@ -146,6 +142,7 @@ a {
 .header__link:hover {
   color: #9d8665;
 }
+
 /* --------------WELCOME--------------- */
 .welcome {
   background-color: #030303;

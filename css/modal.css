@@ -23,7 +23,6 @@
 .modal__form {
   position: relative;
   display: flex;
-  /* position: absolute; */
   height: 845px;
   width: 1440px;
   background-color: #ffffff;
@@ -36,7 +35,6 @@
   margin: 88px auto;
   height: 663px;
   width: 970px;
-  /* position: relative; */
 }
 
 .close {
@@ -65,6 +63,7 @@
 .close-line-right {
   transform: rotate(-45deg);
 }
+
 /* --------Left-------- */
 .modal__container-left {
   height: 100%;
@@ -83,7 +82,6 @@
 
 .modal__title {
   color: #ffffff;
-
   font-family: "Forum", cursive;
   font-style: normal;
   font-weight: normal;
@@ -181,11 +179,6 @@
   border: #000000 1px solid;
   color: #030303;
   font-family: "Roboto";
-  /* font-size: 18px; */
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
-  /* height: 135px; */
 }
 
 .modal__title-entry {
@@ -199,7 +192,6 @@
   font-style: normal;
   font-weight: 400;
   text-transform: capitalize;
-  /* user-select: none; */
 }
 
 .modal__title_underline {
@@ -238,7 +230,6 @@
   color: #ffffff;
   background: #030303;
   height: 25px;
-  /* width: 100%; */
   width: 35px;
   box-sizing: border-box;
 }
@@ -255,7 +246,6 @@
 
 /* -------Right--------  */
 .modal__container-right {
-  /* width: 55%; */
   width: 530px;
   display: flex;
   flex-direction: column;
@@ -299,7 +289,6 @@
 .modal__text-overview {
   margin-bottom: 5px;
   margin-left: 15px;
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
@@ -333,7 +322,6 @@
 }
 
 .modal__image {
-  /* height: 80%; */
   width: 150px;
   height: 120px;
 }
@@ -361,7 +349,6 @@
 
 .modal__text-price {
   margin-bottom: 5px;
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -374,8 +361,6 @@
   height: 2px;
   background-color: #740c11;
   margin: 10px 20px;
-  /* padding-left: 15px; */
-  /* margin-left: 10px; */
   width: 90%;
 }
 
@@ -407,6 +392,7 @@
   color: #030303;
   margin-bottom: 0px;
 }
+
 /* -------CardFront-------- */
 .modal__block-card-front {
   margin: 10px 30px 0 30px;
@@ -414,12 +400,6 @@
   width: 360px;
   height: 211px;
   position: relative;
-
-  /* justify-content: center;
-  align-items: center; */
-  /* position: absolute; */
-  /* left: 0;
-  top: 0; */
   z-index: 100;
 }
 
@@ -498,7 +478,6 @@
 .modal__box-black {
   background: #161615;
   height: 45px;
-  /* width: 360px; */
   width: 100%;
   position: absolute;
   margin-top: 25px;
@@ -507,14 +486,8 @@
 .modal__content-back {
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-end; */
   align-items: center;
-  /* width: 26%; */
   justify-content: center;
-  /* margin-right: 20px; */
-  /* margin-top: 20px; */
-  /* padding-top: 120px; */
-  /* padding-right: 190px; */
   position: absolute;
   margin-left: 265px;
   margin-top: 85px;
@@ -567,5 +540,190 @@
   .modal__form {
     height: 768px;
     width: 1024px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal__container {
+    position: absolute;
+    top: 64%;
+  }
+
+  .modal__form {
+    height: 1479px;
+    width: 590px;
+  }
+
+  .modal__block {
+    display: flex;
+    flex-direction: column;
+    width: 530px;
+    height: 1350px;
+  }
+
+  .modal__container-left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 530px;
+    margin-left: 0;
+    padding-bottom: 20px;
+  }
+
+  .modal__container-right {
+    margin-left: 0;
+    height: 100%;
+  }
+
+  .modal__logo_image {
+    margin-top: -10px;
+  }
+
+  .modal__input-small {
+    width: 40%;
+  }
+
+  .modal__title {
+    margin-bottom: 20px;
+  }
+
+  .modal__input_box {
+    margin-top: 38px;
+  }
+
+  .modal__block-overview {
+    margin: 25px 15px 0 15px;
+  }
+
+  .modal__block-price {
+    margin: 20px 15px -7px 15px;
+  }
+
+  .modal__block-total {
+    margin: 0 15px 0 15px;
+  }
+
+  .modal__block-card-front {
+    margin: 15px 15px 0 15px;
+  }
+
+  .modal__block-card-back {
+    right: 15px;
+    top: 45px;
+  }
+}
+
+@media (max-width: 420px) {
+  .modal__container {
+    top: 86%;
+  }
+
+  .modal__form {
+    height: 1754px;
+    width: 420px;
+  }
+
+  .modal__block {
+    width: 360px;
+    height: 1610px;
+  }
+
+  .modal__title {
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+
+  .modal__subtitle {
+    margin-bottom: 8px;
+  }
+
+  .modal__subtitle_underline {
+    width: 100%;
+  }
+
+  .modal__input_box {
+    margin-top: 38px;
+  }
+
+  .modal__input_box-small {
+    flex-direction: column;
+  }
+
+  .modal__input-small {
+    width: 88%;
+  }
+
+  .modal__container-left {
+    width: 360px;
+    margin-bottom: -180px;
+  }
+
+  .modal__container-right {
+    margin-left: 0;
+    width: 360px;
+  }
+
+  .modal__block-overview {
+    margin: 25px 15px 0 15px;
+  }
+
+  .modal__image {
+    width: 120px;
+    height: 96px;
+  }
+
+  .modal__block-price {
+    margin: 20px 15px -7px 15px;
+  }
+
+  .modal-price-underline {
+    margin: 12px 15px;
+    width: 90%;
+  }
+
+  .modal__block-total {
+    margin: 0 15px 0 15px;
+  }
+
+  .modal__block-card-front {
+    margin: 15px 15px 0 15px;
+    width: 330px;
+    height: 209px;
+    position: absolute;
+  }
+
+  .modal__logo-card {
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .modal__logo-visa {
+    margin-bottom: 12px;
+    margin-top: 3px;
+  }
+
+  .modal__input-name {
+    width: 290px;
+  }
+
+  .modal__block-card-back {
+    width: 330px;
+    height: 209px;
+    right: 15px;
+    top: 250px;
+  }
+
+  .modal__content-back {
+    margin-left: 235px;
+  }
+
+  .modal__input-cvc {
+    margin-bottom: 2px;
+  }
+
+  .modal__button-book {
+    margin-left: 110px;
+    margin-top: 247px;
   }
 }

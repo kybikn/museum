@@ -43,20 +43,13 @@
   .header__nav {
     top: 90px;
     padding-top: 35px;
-    left: -550px;
+    left: -600px;
     height: 510px;
-    /* width: 74%; */
-    width: 100%;
+    /* width: 100%; */
   }
 
   .hamburger {
     top: 30px;
-  }
-
-  .burger-image {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .burger_image-box {
@@ -70,6 +63,8 @@
     width: 95px;
     height: 95px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .image2 {
@@ -86,8 +81,8 @@
     margin-left: 25px;
     width: 260px;
   }
-  /* --------------WELCOME--------------- */
 
+  /* --------------WELCOME--------------- */
   .welcome__content {
     padding-top: 5px;
   }

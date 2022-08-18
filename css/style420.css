@@ -41,10 +41,13 @@
   }
 
   .header__nav {
+    /* position: fixed; */
     top: 90px;
-    padding-top: 35px;
-    left: -600px;
-    height: 510px;
+    /* padding: 0px; */
+    /* left: -600px; */
+    width: 420px;
+    left: -420px;
+    height: 544px;
     /* width: 100%; */
   }
 
@@ -54,7 +57,7 @@
 
   .burger_image-box {
     display: flex;
-    width: 74%;
+    width: 82%;
     padding-top: 30px;
     justify-content: space-between;
   }
@@ -72,11 +75,11 @@
   }
 
   .underline {
-    width: 74%;
+    width: 82%;
     margin-top: 0;
   }
 
-  .footer__ul-burger {
+  .footer__nav-burger {
     margin-top: 25px;
     margin-left: 25px;
     width: 260px;

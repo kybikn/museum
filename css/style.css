@@ -73,6 +73,8 @@ a {
   /* align-items: center; */
   width: 199px;
   height: 33px;
+  transition: 1s;
+  cursor: pointer;
 }
 
 .logo__image {
@@ -81,7 +83,6 @@ a {
   background-repeat: no-repeat;
   width: 49px;
   height: 26px;
-  transition: 1s;
   fill: #ffffff;
   /* background-color: #fff;
   -webkit-mask-image: url(../assets/svg/logo.svg);
@@ -96,7 +97,6 @@ a {
   line-height: 31px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  transition: 1s;
   color: #ffffff;
 }
 
@@ -129,16 +129,21 @@ a {
   letter-spacing: 2px;
   text-decoration: none;
   transition: 1s;
+  cursor: pointer;
   color: #ffffff;
 }
 
+.shadow,
 .vector,
 .burger__block {
   display: none;
 }
 
-.logo:hover .logo__image,
-.logo:hover .logo__text,
+.logo:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+
 .header__link:hover {
   color: #9d8665;
 }
@@ -189,7 +194,8 @@ a {
   border-radius: 10px;
   font-size: 22px;
   line-height: 26px;
-  transition: 0.7s;
+  transition: 1s;
+  cursor: pointer;
   letter-spacing: 2px;
 }
 
@@ -290,7 +296,7 @@ a {
   background-color: #ffffff;
   display: inline-block;
   cursor: pointer;
-  transition: 0.7s;
+  transition: 1s;
 }
 
 .slider-square.active {
@@ -308,8 +314,10 @@ a {
   height: 8px;
   width: 30px;
   background-image: url("../assets/svg/slider-left-arrow.svg");
-  transition: 0.7s;
+  transition: 1s;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .slider_arrow-right {
@@ -317,15 +325,21 @@ a {
   width: 30px;
   background-image: url("../assets/svg/slider-left-arrow.svg");
   transform: scale(-1, 1);
-  transition: 0.7s;
+  transition: 1s;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .welcome__button:hover,
-.slider_arrow-left:hover,
-.slider_arrow-right:hover,
 .slider-square:hover {
   background-color: #9d8665;
+}
+
+.slider_arrow-right:hover,
+.slider_arrow-left:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
 }
 
 /* --------------VISITING--------------- */
@@ -350,7 +364,8 @@ a {
 .visiting__box {
   /* display: block; */
   /* color: #000000; */
-  transition: 0.7s;
+  transition: 1s;
+  cursor: pointer;
   flex-basis: 30%;
   /* padding: 60px 0; */
   /* flex-wrap: wrap; */
@@ -368,7 +383,7 @@ a {
 .visiting__box:hover .visiting__text1,
 .visiting__box:hover .visiting__text2 {
   color: #9d8665;
-  transition: 0.7s;
+  transition: 1s;
 }
 
 .visiting__box:hover .visiting__title_underline::after {
@@ -409,7 +424,7 @@ a {
   border-radius: 0px;
   /*  width: 20%; */
   width: 300px;
-  transition: 0.7s;
+  transition: 1s;
 }
 
 .visiting__text1 {
@@ -522,7 +537,7 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  z-index: 10;
+  z-index: 1;
   cursor: ew-resize;
   width: 720px;
   height: 700px;
@@ -594,7 +609,8 @@ a {
   background-color: transparent;
   width: 220px;
   height: 220px;
-  transition: 0.7s;
+  transition: 1s;
+  cursor: pointer;
   margin-bottom: 85px;
   border: none;
   padding: 0;
@@ -603,7 +619,6 @@ a {
 .video__button:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
-  cursor: pointer;
 }
 
 .video__control_box {
@@ -630,14 +645,16 @@ a {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  transition: 0.7s;
+  transition: 1s;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .play-icon:hover,
 .play-icon:active {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
-  cursor: pointer;
 }
 
 .volume-icon {
@@ -762,14 +779,14 @@ a {
 }
 
 .slider_circle {
-  cursor: pointer;
   height: 12px;
   width: 12px;
   margin: 0 10px;
   background: #999999;
   border-radius: 50%;
   display: inline-block;
-  transition: 0.7s;
+  transition: 1s;
+  cursor: pointer;
 }
 
 .active {
@@ -778,24 +795,33 @@ a {
 
 .arrow {
   color: #999999;
+  transition: 1s;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  /* padding: 5px; */
 }
+
 .prev {
   /* padding-top: 7px; */
   padding-top: 8px;
-  margin-right: -13px;
+  /* margin-right: -13px; */
 }
+
 .next {
   /* padding-top: 7px; */
   padding-top: 8px;
-  margin-left: -13px;
+  /* margin-left: -13px; */
 }
+
 .arrow:hover {
   color: #710707;
 }
+
 .arrow:active {
   color: #333333;
 }
+
 .slider_circle:hover {
   background: #710707;
 }
@@ -973,6 +999,7 @@ a {
   cursor: pointer;
   position: absolute;
   margin-top: 5px;
+  padding: 5px;
 }
 
 .checkmark {
@@ -998,6 +1025,7 @@ a {
   /* margin-bottom: 26px; */
   margin-bottom: 27px;
   margin-left: 7px;
+  cursor: pointer;
   /* position: relative; */
   /* user-select: none; */
 }
@@ -1023,7 +1051,6 @@ a {
 }
 
 .tickets__text {
-  cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -1134,7 +1161,8 @@ input[type="number"] {
   /* flex-wrap: nowrap; */
   align-items: center;
   justify-content: center;
-  transition: 0.7s;
+  transition: 1s;
+  cursor: pointer;
   /* align-items: flex-start; */
   /* width: 175px; */
 }
@@ -1152,6 +1180,10 @@ input[type="number"] {
   letter-spacing: 2px;
   align-items: center;
   color: #ffffff;
+}
+
+.tickets__link:hover {
+  color: #000000;
 }
 
 .tickets__photo {
@@ -1218,6 +1250,10 @@ input[type="number"] {
   color: #000000;
 }
 
+.contacts__link:hover {
+  color: #9d8665;
+}
+
 /* --------------FOOTER--------------- */
 .footer {
   background-color: #030303;
@@ -1244,6 +1280,8 @@ input[type="number"] {
   justify-content: space-between;
   width: 195px;
   height: 50px;
+  transition: 1s;
+  cursor: pointer;
 }
 
 .logo__text {
@@ -1278,14 +1316,15 @@ input[type="number"] {
   letter-spacing: 2px;
 }
 
-.footer__logo:hover .logo__image,
-.footer__logo:hover .logo__text,
-.footer__link:hover {
+.footer__link:hover,
+.footer__text_link:hover {
   color: #9d8665;
 }
 
+.footer__logo:hover,
 .footer__link_icon:hover {
-  background-color: #9d8665;
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
 }
 
 .footer__ul_icon {
@@ -1305,7 +1344,7 @@ input[type="number"] {
   background-position: center;
   border: #666666 1px solid;
   border-radius: 50%;
-  transition: 0.7s;
+  transition: 1s;
   cursor: pointer;
   width: 48px;
   height: 48px;
@@ -1366,4 +1405,6 @@ input[type="number"] {
 .footer__text_link {
   color: #ffffff;
   padding-left: 30px;
+  transition: 1s;
+  cursor: pointer;
 }

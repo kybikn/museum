@@ -22,6 +22,7 @@
 
 <body>
     <header class="header">
+
         <div class="container header__container">
             <a href="">
                 <div class="logo">
@@ -29,15 +30,24 @@
                     <p class="logo__text">Louvre</p>
                 </div>
             </a>
-            <nav class="header__nav">
-                <ul class="header__ul">
-                    <li><a href="#visiting" class="header__link">Visiting</a><span class="vector">></span></li>
-                    <li><a href="#explore" class="header__link">Explore</a><span class="vector">></span></li>
-                    <li><a href="#video" class="header__link">Video</a><span class="vector">></span></li>
-                    <li><a href="#gallery" class="header__link">Gallery</a><span class="vector">></span></li>
-                    <li><a href="#tickets" class="header__link">Tickets</a><span class="vector">></span></li>
-                    <li><a href="#contacts" class="header__link">Contacts</a><span class="vector">></span></li>
-                </ul>
+
+            <div class="header__nav">
+                <nav>
+                    <ul class="header__ul">
+                        <li class="header__li"><a href="#visiting" class="header__link">Visiting</a><span
+                                class="vector">></span></li>
+                        <li class="header__li"><a href="#explore" class="header__link">Explore</a><span
+                                class="vector">></span></li>
+                        <li class="header__li"><a href="#video" class="header__link">Video</a><span
+                                class="vector">></span></li>
+                        <li class="header__li"><a href="#gallery" class="header__link">Gallery</a><span
+                                class="vector">></span></li>
+                        <li class="header__li"><a href="#tickets" class="header__link">Tickets</a><span
+                                class="vector">></span></li>
+                        <li class="header__li"><a href="#contacts" class="header__link">Contacts</a><span
+                                class="vector">></span></li>
+                    </ul>
+                </nav>
 
                 <div class="burger__block">
                     <div class="burger_image-box">
@@ -48,27 +58,28 @@
 
                     <div class="underline"></div>
 
-                    <ul class="footer__ul-burger">
-                        <li>
-                            <a href="https://www.youtube.com/user/louvre" target="_blank">
-                                <div class="icon icon_yt footer__link_icon"></div>
-                            </a>
-                        </li>
-                        <li><a href="https://www.instagram.com/museelouvre/" target="_blank">
-                                <div class="icon icon_inst footer__link_icon"></div>
-                            </a></li>
-                        <li><a href="https://www.facebook.com/museedulouvre" target="_blank">
-                                <div class="icon icon_fb footer__link_icon"></div>
-                            </a></li>
-                        <li><a href="http://twitter.com/museelouvre" target="_blank">
-                                <div class="icon icon_tw footer__link_icon"></div>
-                            </a></li>
-                        <li><a href="https://www.pinterest.fr/museedulouvre/" target="_blank">
-                                <div class="icon icon_pint footer__link_icon"></div>
-                            </a></li>
-                    </ul>
+                    <div class="footer__nav-burger">
+                        <a href="https://www.youtube.com/user/louvre" target="_blank">
+                            <div class="icon icon_yt footer__link_icon"></div>
+                        </a>
+                        <a href="https://www.instagram.com/museelouvre/" target="_blank">
+                            <div class="icon icon_inst footer__link_icon"></div>
+                        </a>
+                        <a href="https://www.facebook.com/museedulouvre" target="_blank">
+                            <div class="icon icon_fb footer__link_icon"></div>
+                        </a>
+                        <a href="http://twitter.com/museelouvre" target="_blank">
+                            <div class="icon icon_tw footer__link_icon"></div>
+                        </a>
+                        <a href="https://www.pinterest.fr/museedulouvre/" target="_blank">
+                            <div class="icon icon_pint footer__link_icon"></div>
+                        </a>
+                    </div>
                 </div>
-            </nav>
+
+            </div>
+
+            <div class="shadow"></div>
             <div class="hamburger" id="hamburger">
                 <span class="line line-1"></span>
                 <span class="line line-2"></span>
@@ -123,8 +134,10 @@
                                 <span class="slider-square"></span>
                             </div>
                             <div class="slider_arrows">
-                                <div class="slider_arrow-left"></div>
-                                <div class="slider_arrow-right"></div>
+                                <button class="slider_arrow-left"></button>
+                                <button class="slider_arrow-right"></button>
+                                <!-- <div class="slider_arrow-left"></div>
+                                <div class="slider_arrow-right"></div> -->
                             </div>
                         </div>
                     </div>
@@ -140,37 +153,37 @@
                 <div class="visiting__block">
                     <a class="visiting__box" href="./tours/tour1.html" target="_blank">
                         <img src="./assets/img/1.jpg" class="visiting__image" alt="Royal Palace">
-                        <h4 class="visiting__title visiting__title_underline">Royal Palace</h4>
+                        <h3 class="visiting__title visiting__title_underline">Royal Palace</h3>
                         <p class="visiting__text1">360° Virtual Tour</p>
                         <p class="visiting__text2">Google Street Panorama View</p>
                     </a>
                     <a class="visiting__box" href="./tours/tour2.html" target="_blank">
                         <img src="./assets/img/2.jpg" class="visiting__image" alt="Denon Wing">
-                        <h4 class="visiting__title visiting__title_underline">Denon Wing</h4>
+                        <h3 class="visiting__title visiting__title_underline">Denon Wing</h3>
                         <p class="visiting__text1">360° Virtual Tour</p>
                         <p class="visiting__text2">Google Street Panorama View</p>
                     </a>
                     <a class="visiting__box" href="./tours/tour3.html" target="_blank">
                         <img src="./assets/img/3.jpg" class="visiting__image" alt="Colonnade Perrault">
-                        <h4 class="visiting__title visiting__title_underline">Colonnade Perrault</h4>
+                        <h3 class="visiting__title visiting__title_underline">Colonnade Perrault</h3>
                         <p class="visiting__text1">360° Virtual Tour</p>
                         <p class="visiting__text2">Google Street Panorama View</p>
                     </a>
                     <a class="visiting__box" href="./tours/tour4.html" target="_blank">
                         <img src="./assets/img/4.jpg" class="visiting__image" alt="Greek hall">
-                        <h4 class="visiting__title visiting__title_underline">Greek hall</h4>
+                        <h3 class="visiting__title visiting__title_underline">Greek hall</h3>
                         <p class="visiting__text1">360° Virtual Tour</p>
                         <p class="visiting__text2">Google Street Panorama View</p>
                     </a>
                     <a class="visiting__box" href="./tours/tour5.html" target="_blank">
                         <img src="./assets/img/5.jpg" class="visiting__image" alt="Mona Lisa">
-                        <h4 class="visiting__title visiting__title_underline">Mona Lisa</h4>
+                        <h3 class="visiting__title visiting__title_underline">Mona Lisa</h3>
                         <p class="visiting__text1">360° Virtual Tour</p>
                         <p class="visiting__text2">Google Street Panorama View</p>
                     </a>
                     <a class="visiting__box" href="./tours/tour6.html" target="_blank">
                         <img src="./assets/img/6.jpg" class="visiting__image" alt="Night Palace">
-                        <h4 class="visiting__title visiting__title_underline">Night Palace</h4>
+                        <h3 class="visiting__title visiting__title_underline">Night Palace</h3>
                         <p class="visiting__text1">360° Virtual Tour</p>
                         <p class="visiting__text2">Google Street Panorama View</p>
                     </a>
@@ -250,11 +263,14 @@
                     <button class="video__button"></button>
                     <input type="range" value="40" min="0" max="100" step="1" class="progress-adaptive">
                     <div class="video__control_box">
-                        <div class="play play-icon"></div>
+                        <!-- <span class="play play-icon"></span> -->
+                        <button class="play play-icon"></button>
                         <input type="range" value="40" min="0" max="100" step="1" class="progress">
-                        <div class="volume-icon play-icon"></div>
+                        <button class="volume-icon play-icon"></button>
+                        <!-- <span class="volume-icon play-icon"></span> -->
                         <input type="range" value="40" min="0" max="100" step="1" class="volume">
-                        <div class="square-icon play-icon"></div>
+                        <button class="square-icon play-icon"></button>
+                        <!-- <span class="square-icon play-icon"></span> -->
                     </div>
                 </div>
                 <!-- Video foto (без видео)-->
@@ -335,9 +351,9 @@
                 </div>
 
                 <div class="video__slider_box">
-                    <a class="prev">
-                        <span class="arrow">&#10094;&#10094;</span>
-                    </a>
+                    <div class="prev">
+                        <button class="arrow">&#10094;&#10094;</button>
+                    </div>
                     <div class="video__slider_circles">
                         <span class="slider_circle active" data-circle="0"></span>
                         <span class="slider_circle" data-circle="1"></span>
@@ -345,9 +361,9 @@
                         <span class="slider_circle" data-circle="3"></span>
                         <span class="slider_circle" data-circle="4"></span>
                     </div>
-                    <a class="next">
-                        <span class="arrow">&#10095;&#10095;</span>
-                    </a>
+                    <div class="next">
+                        <button class="arrow">&#10095;&#10095;</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -400,16 +416,16 @@
                             <label>
                                 <input type="radio" class="tickets__input" name="radio" checked><span
                                     class="checkmark"></span>
-                                <p class="tickets__type_text"> Permanent exhibition</p>
+                                <span class="tickets__type_text">Permanent exhibition</span>
                             </label>
                             <label><input type="radio" class="tickets__input" name="radio"><span
                                     class="checkmark"></span>
-                                <p class="tickets__type_text"> Temporary
-                                    exhibition</p>
+                                <span class="tickets__type_text">Temporary
+                                    exhibition</span>
                             </label>
                             <label><input type="radio" class="tickets__input" name="radio"><span
                                     class="checkmark"></span>
-                                <p class="tickets__type_text"> Combined Admission</p>
+                                <span class="tickets__type_text">Combined Admission</span>
                             </label>
                         </div>
                     </form>
@@ -444,10 +460,14 @@
                 </div>
             </div>
             <div class="tickets__photo"></div>
-
+            <div class=" shadowModal"></div>
             <!-- MODAL -->
             <div class="modal__container" id="openModal">
+
+                <a href="" class="close-all"></a>
+                <!-- <div class="close-all"></div> -->
                 <form class="modal__form">
+
                     <a href="#tickets">
                         <div class="close">
                             <div class="close-line close-line-left"></div>
@@ -456,10 +476,13 @@
                     </a>
 
                     <div class="modal__block">
+
+
+
                         <div class="modal__container-left">
                             <div>
                                 <div class="modal__logo_image"></div>
-                                <h3 class="modal__title">Booking tickets</h3>
+                                <h4 class="modal__title">Booking tickets</h4>
                                 <p class="modal__subtitle">Tour to Louvre</p>
                                 <div class="modal__subtitle_underline"></div>
                             </div>
@@ -697,7 +720,8 @@
                 <p class="footer__text">© 2021</p>
                 <p class="footer__text"><a class="footer__text_link" href="https://rs.school/" target="_blank">The
                         Rolling Scopes School</a></p>
-                <p class="footer__text">Username</p>
+                <p class="footer__text"><a class="footer__text_link footer__text" href="https://github.com/kybikn"
+                        target="_blank">Username</a></p>
             </div>
         </div>
     </footer>

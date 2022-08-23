@@ -11,12 +11,12 @@ function toggleModal(event) {
     event.target.classList.contains("shadowModal") ||
     event.target.classList.contains("modal__block")
   ) {
-    modal.classList.remove("active");
-    // modal.classList.remove("active-modal");
+    // modal.classList.remove("active");
+    modal.classList.remove("active-modal");
     shadow.classList.remove("active");
   } else {
-    modal.classList.toggle("active");
-    // modal.classList.toggle("active-modal");
+    // modal.classList.toggle("active");
+    modal.classList.toggle("active-modal");
     shadow.classList.toggle("active");
   }
 }

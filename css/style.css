@@ -1,3 +1,16 @@
+/* :root {
+  --bg-dark: #151719;
+  --dark-red: #710707;
+  --font-gold: #9d8665;
+  --font1: 80px;
+  --font2: 32px;
+}
+
+.section-title {
+  font-size: var(--font1);
+  color: var(--font-gold);
+} */
+
 body {
   /* width: 1920px; */
   background-color: black;
@@ -102,6 +115,7 @@ a {
 
 .header__nav {
   width: 735px;
+  /* max-width: 735px; */
   height: 26px;
   color: #ffffff;
   /* padding-right: 35px; */
@@ -1030,6 +1044,10 @@ a {
   /* user-select: none; */
 }
 
+.tickets__type_text:hover {
+  color: #9d8665;
+}
+
 .tickets__amount {
   display: flex;
   flex-direction: column;
@@ -1130,6 +1148,11 @@ a {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
+}
+
+.button_minus:hover,
+.button_plus:hover {
+  color: #9d8665;
 }
 
 input[type="number"] {

@@ -36,7 +36,7 @@ a {
 }
 
 .section__title {
-  font-family: "Forum";
+  font-family: 'Forum';
   font-style: normal;
   font-weight: 400;
   font-size: 80px;
@@ -59,7 +59,7 @@ a {
 }
 
 .title__underline::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -28px;
   left: 0;
@@ -91,7 +91,7 @@ a {
 }
 
 .logo__image {
-  background-image: url("../assets/svg/logo.svg");
+  background-image: url('../assets/svg/logo.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 49px;
@@ -103,7 +103,7 @@ a {
 }
 
 .logo__text {
-  font-family: "Forum";
+  font-family: 'Forum';
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -135,7 +135,7 @@ a {
   /* padding-left: 20px; */
   width: 63px;
   height: 26px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 100;
   font-size: 22px;
@@ -185,7 +185,7 @@ a {
 }
 
 .welcome__text {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
   font-size: 28px;
@@ -197,7 +197,7 @@ a {
 }
 
 .welcome__button {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
   display: inline-block;
@@ -290,7 +290,7 @@ a {
   font-size: 22px;
   line-height: 40px;
   gap: 0 10px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   /* user-select: none; */
@@ -327,7 +327,7 @@ a {
 .slider_arrow-left {
   height: 8px;
   width: 30px;
-  background-image: url("../assets/svg/slider-left-arrow.svg");
+  background-image: url('../assets/svg/slider-left-arrow.svg');
   transition: 1s;
   cursor: pointer;
   background-color: transparent;
@@ -337,7 +337,7 @@ a {
 .slider_arrow-right {
   height: 8px;
   width: 30px;
-  background-image: url("../assets/svg/slider-left-arrow.svg");
+  background-image: url('../assets/svg/slider-left-arrow.svg');
   transform: scale(-1, 1);
   transition: 1s;
   cursor: pointer;
@@ -411,7 +411,7 @@ a {
 }
 
 .visiting__title {
-  font-family: "Forum";
+  font-family: 'Forum';
   font-style: normal;
   font-weight: 400;
   font-weight: normal;
@@ -428,7 +428,7 @@ a {
 }
 
 .visiting__title_underline::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -442,7 +442,7 @@ a {
 }
 
 .visiting__text1 {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 100;
   font-size: 22px;
@@ -453,7 +453,7 @@ a {
 }
 
 .visiting__text2 {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 100;
   font-size: 18px;
@@ -491,7 +491,7 @@ a {
 }
 
 .explore__title_underline::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -25px;
   left: 0;
@@ -505,7 +505,7 @@ a {
 .explore__text {
   width: 660px;
   height: 77px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
@@ -547,7 +547,7 @@ a {
 }
 
 .explore__image-slider {
-  background-image: url("../assets/svg/explore-slider.svg");
+  background-image: url('../assets/svg/explore-slider.svg');
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -585,8 +585,8 @@ a {
 .video__text {
   width: 50%;
   height: 90px;
-  font-family: "Roboto-Light";
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto-Light';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
@@ -607,8 +607,8 @@ a {
 }
 
 .viewer {
-  /* width: 100%;
-  height: auto; */
+  /* width: 100%; */
+  /* height: 100%; */
   height: 650px;
   width: 1440px;
   /* border: 1px solid #bdae82; */
@@ -616,7 +616,7 @@ a {
 }
 
 .video__button {
-  background-image: url("../assets/svg/play.svg");
+  background-image: url('../assets/svg/play.svg');
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -646,7 +646,7 @@ a {
 }
 
 .play {
-  background-image: url("../assets/svg/play2.svg");
+  background-image: url('../assets/svg/play2.svg');
   width: 23px;
   height: 31px;
   margin-left: 20px;
@@ -672,7 +672,7 @@ a {
 }
 
 .volume-icon {
-  background-image: url("../assets/svg/volume.svg");
+  background-image: url('../assets/svg/volume.svg');
   width: 40px;
   height: 36px;
   margin-left: 30px;
@@ -682,7 +682,7 @@ a {
 }
 
 .square-icon {
-  background-image: url("../assets/svg/square-icon.svg");
+  background-image: url('../assets/svg/square-icon.svg');
   width: 35px;
   height: 35px;
   margin-left: 30px;
@@ -692,11 +692,11 @@ a {
 }
 
 .pause {
-  background-image: url("../assets/svg/pause.svg");
+  background-image: url('../assets/svg/pause.svg');
 }
 
 .mute {
-  background-image: url("../assets/svg/mute.svg");
+  background-image: url('../assets/svg/mute.svg');
 }
 
 .progress {
@@ -997,7 +997,7 @@ a {
 }
 
 .tickets__title-type {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -1028,7 +1028,7 @@ a {
 
 .tickets__type_text {
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
@@ -1056,7 +1056,7 @@ a {
 }
 
 .tickets__title-amount {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -1069,7 +1069,7 @@ a {
 }
 
 .tickets__text {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
@@ -1099,7 +1099,7 @@ a {
   /* padding: 0; */
   margin-bottom: 10px;
   border: 3px solid #000000;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
@@ -1126,7 +1126,7 @@ a {
   border: none;
   font-size: 35px;
   color: #000000;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
 }
@@ -1145,7 +1145,7 @@ a {
   border: none;
   font-size: 32px;
   color: #000000;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
 }
@@ -1155,12 +1155,12 @@ a {
   color: #9d8665;
 }
 
-input[type="number"] {
+input[type='number'] {
   -moz-appearance: textfield;
 }
 
 .tickets__total {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -1195,7 +1195,7 @@ input[type="number"] {
 }
 
 .tickets__link {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
@@ -1212,7 +1212,7 @@ input[type="number"] {
 .tickets__photo {
   height: 400px;
   width: 100%;
-  background: url("../assets/img/tickets2.jpg");
+  background: url('../assets/img/tickets2.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1249,7 +1249,7 @@ input[type="number"] {
 }
 
 .contacts__title {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
@@ -1259,7 +1259,7 @@ input[type="number"] {
 }
 
 .contacts__text {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
@@ -1331,7 +1331,7 @@ input[type="number"] {
 .footer__link {
   color: #ffffff;
   transition: 1s;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 100;
   font-size: 22px;
@@ -1374,23 +1374,23 @@ input[type="number"] {
 }
 
 .icon_yt {
-  background-image: url("../assets/svg/youtube.svg");
+  background-image: url('../assets/svg/youtube.svg');
 }
 
 .icon_inst {
-  background-image: url("../assets/svg/instagram.svg");
+  background-image: url('../assets/svg/instagram.svg');
 }
 
 .icon_fb {
-  background-image: url("../assets/svg/facebook.svg");
+  background-image: url('../assets/svg/facebook.svg');
 }
 
 .icon_tw {
-  background-image: url("../assets/svg/twitter.svg");
+  background-image: url('../assets/svg/twitter.svg');
 }
 
 .icon_pint {
-  background-image: url("../assets/svg/pinterest.svg");
+  background-image: url('../assets/svg/pinterest.svg');
 }
 
 .footer__underline {
@@ -1415,7 +1415,7 @@ input[type="number"] {
 }
 
 .footer__text {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 100;
   font-size: 22px;

@@ -9,7 +9,7 @@
 [Click here!](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/museum/museum-stage1.md)
 
 ## Описание:
-**"Museum"** - одностраничный сайт о музее Лувр.<br>
+**"Museum"** - адаптивный и интерактивный одностраничный сайт о музее Лувр.<br>
 Проект создавался в рамках прохождения stage#1 факультета "Frontend-разработчик" Rolling Scopes School.<br>
 
 ## Технологии:
